@@ -10,6 +10,7 @@ import Foundation
 class Location {
     var name = ""
     var image = ""
+    var rating = 0.0
 
     init(name: String, image: String) {
         self.name = name
