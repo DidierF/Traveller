@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UITabBarController, UITabBarControllerDelegate {
+class MainViewController: UITabBarController, UITabBarControllerDelegate {
 
     private lazy var locationList: UINavigationController = getNavigationVC(title: "Locations", rootVC: LocationListVC())
 
