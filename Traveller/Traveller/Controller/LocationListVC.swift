@@ -27,9 +27,9 @@ class LocationListVC: UIViewController {
     override func viewDidLoad() {
         let color: CGFloat = 0.95
         view.backgroundColor = UIColor(red: color, green: color, blue: color, alpha: 1)
-        title = "Locations"
 
         loadData()
+        setupNavbar()
 
         view.addSubview(tableView)
         NSLayoutConstraint.activate([
@@ -40,9 +40,23 @@ class LocationListVC: UIViewController {
         ])
     }
 
+    private func setupNavbar() {
+        title = "Locations"
+
+        let chatButton = UIBarButtonItem(image: UIImage(named: "chat")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(onChatPress))
+        chatButton.tintColor = .black
+        navigationItem.rightBarButtonItems = [chatButton]
+    }
+
     private func loadData() {
         locations = service.getLocations()
         tableView.reloadData()
+    }
+
+    @objc private func onChatPress() {
+        let vc = ChatVC()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

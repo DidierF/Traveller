@@ -19,6 +19,7 @@ class RatingStar: UIImageView {
     }
 
     required init?(coder: NSCoder) {
+        super.init(coder: coder)
         print("Coder init not implemented RatingStar")
     }
 }

@@ -27,9 +27,9 @@ class TripsListVC: UIViewController {
     override func viewDidLoad() {
         let color: CGFloat = 0.95
         view.backgroundColor = UIColor(red: color, green: color, blue: color, alpha: 1)
-        title = "Trips"
 
         loadData()
+        setupNavbar()
 
         view.addSubview(tableView)
 
@@ -41,9 +41,23 @@ class TripsListVC: UIViewController {
         ])
     }
 
+    private func setupNavbar() {
+        title = "Trips"
+
+        let chatButton = UIBarButtonItem(image: UIImage(named: "chat")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(onChatPress))
+        chatButton.tintColor = .black
+        navigationItem.rightBarButtonItems = [chatButton]
+    }
+
     private func loadData() {
         trips = service.getTrips()
         tableView.reloadData()
+    }
+
+    @objc private func onChatPress() {
+        let vc = ChatVC()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

@@ -22,6 +22,11 @@
 		3A16092D26ED971A00CFEAF7 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092C26ED971A00CFEAF7 /* TripTableViewCell.swift */; };
 		3A16092F26ED994E00CFEAF7 /* TripsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092E26ED994E00CFEAF7 /* TripsService.swift */; };
 		3A16093126ED9D8700CFEAF7 /* RatingStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16093026ED9D8700CFEAF7 /* RatingStar.swift */; };
+		3A16093326EDB8E300CFEAF7 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16093226EDB8E300CFEAF7 /* ChatsVC.swift */; };
+		3A16093526EDBDE000CFEAF7 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16093426EDBDE000CFEAF7 /* Conversation.swift */; };
+		3A16093726EDBE8B00CFEAF7 /* TripConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16093626EDBE8B00CFEAF7 /* TripConversation.swift */; };
+		3A16093926EDBF1000CFEAF7 /* LocationConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16093826EDBF1000CFEAF7 /* LocationConversation.swift */; };
+		3A16093B26EDC1FB00CFEAF7 /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16093A26EDC1FB00CFEAF7 /* ConversationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		3A16092C26ED971A00CFEAF7 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		3A16092E26ED994E00CFEAF7 /* TripsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsService.swift; sourceTree = "<group>"; };
 		3A16093026ED9D8700CFEAF7 /* RatingStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStar.swift; sourceTree = "<group>"; };
+		3A16093226EDB8E300CFEAF7 /* ChatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
+		3A16093426EDBDE000CFEAF7 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		3A16093626EDBE8B00CFEAF7 /* TripConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripConversation.swift; sourceTree = "<group>"; };
+		3A16093826EDBF1000CFEAF7 /* LocationConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationConversation.swift; sourceTree = "<group>"; };
+		3A16093A26EDC1FB00CFEAF7 /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,9 @@
 				3A16091B26ED79C200CFEAF7 /* Location.swift */,
 				3A16092826ED962400CFEAF7 /* Trip.swift */,
 				3A16092A26ED96A100CFEAF7 /* Company.swift */,
+				3A16093426EDBDE000CFEAF7 /* Conversation.swift */,
+				3A16093626EDBE8B00CFEAF7 /* TripConversation.swift */,
+				3A16093826EDBF1000CFEAF7 /* LocationConversation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 				3A16092126ED7B2500CFEAF7 /* LocationListVC.swift */,
 				3A16092326ED7D9400CFEAF7 /* TripsListVC.swift */,
 				3A16090A26ED75B500CFEAF7 /* MainViewController.swift */,
+				3A16093226EDB8E300CFEAF7 /* ChatsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -122,6 +136,7 @@
 				3A16092626ED809E00CFEAF7 /* LocationTableViewCell.swift */,
 				3A16092C26ED971A00CFEAF7 /* TripTableViewCell.swift */,
 				3A16093026ED9D8700CFEAF7 /* RatingStar.swift */,
+				3A16093A26EDC1FB00CFEAF7 /* ConversationTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,12 +213,17 @@
 				3A16092D26ED971A00CFEAF7 /* TripTableViewCell.swift in Sources */,
 				3A16090B26ED75B500CFEAF7 /* MainViewController.swift in Sources */,
 				3A16090726ED75B500CFEAF7 /* AppDelegate.swift in Sources */,
+				3A16093526EDBDE000CFEAF7 /* Conversation.swift in Sources */,
 				3A16092726ED809E00CFEAF7 /* LocationTableViewCell.swift in Sources */,
+				3A16093326EDB8E300CFEAF7 /* ChatsVC.swift in Sources */,
+				3A16093926EDBF1000CFEAF7 /* LocationConversation.swift in Sources */,
 				3A16092F26ED994E00CFEAF7 /* TripsService.swift in Sources */,
+				3A16093B26EDC1FB00CFEAF7 /* ConversationTableViewCell.swift in Sources */,
 				3A16092B26ED96A100CFEAF7 /* Company.swift in Sources */,
 				3A16092926ED962400CFEAF7 /* Trip.swift in Sources */,
 				3A16091F26ED7A2700CFEAF7 /* LocationService.swift in Sources */,
 				3A16093126ED9D8700CFEAF7 /* RatingStar.swift in Sources */,
+				3A16093726EDBE8B00CFEAF7 /* TripConversation.swift in Sources */,
 				3A16091C26ED79C200CFEAF7 /* Location.swift in Sources */,
 				3A16092426ED7D9400CFEAF7 /* TripsListVC.swift in Sources */,
 				3A16090926ED75B500CFEAF7 /* SceneDelegate.swift in Sources */,
