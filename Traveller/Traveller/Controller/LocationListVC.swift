@@ -17,6 +17,7 @@ class LocationListVC: UIViewController {
         let t = UITableView()
         t.translatesAutoresizingMaskIntoConstraints = false
         t.separatorColor = .clear
+        t.backgroundColor = .clear
         t.register(LocationTableViewCell.self, forCellReuseIdentifier: LocationTableViewCell.identifier)
         t.dataSource = self
         t.delegate = self
@@ -24,7 +25,8 @@ class LocationListVC: UIViewController {
     }()
 
     override func viewDidLoad() {
-        view.backgroundColor = .white
+        let color: CGFloat = 0.95
+        view.backgroundColor = UIColor(red: color, green: color, blue: color, alpha: 1)
         title = "Locations"
 
         loadData()

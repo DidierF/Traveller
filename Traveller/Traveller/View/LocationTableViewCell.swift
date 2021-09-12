@@ -38,16 +38,7 @@ class LocationTableViewCell: UITableViewCell {
         return l
     }()
 
-    let star: UIImageView = {
-        let v = UIImageView(image: UIImage(named: "rating")?.withRenderingMode(.alwaysTemplate))
-        v.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            v.heightAnchor.constraint(equalTo: v.widthAnchor),
-            v.widthAnchor.constraint(equalToConstant: 16)
-        ])
-        v.tintColor = .white
-        return v
-    }()
+    let star: UIImageView = RatingStar()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

@@ -17,6 +17,11 @@
 		3A16092226ED7B2500CFEAF7 /* LocationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092126ED7B2500CFEAF7 /* LocationListVC.swift */; };
 		3A16092426ED7D9400CFEAF7 /* TripsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092326ED7D9400CFEAF7 /* TripsListVC.swift */; };
 		3A16092726ED809E00CFEAF7 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092626ED809E00CFEAF7 /* LocationTableViewCell.swift */; };
+		3A16092926ED962400CFEAF7 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092826ED962400CFEAF7 /* Trip.swift */; };
+		3A16092B26ED96A100CFEAF7 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092A26ED96A100CFEAF7 /* Company.swift */; };
+		3A16092D26ED971A00CFEAF7 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092C26ED971A00CFEAF7 /* TripTableViewCell.swift */; };
+		3A16092F26ED994E00CFEAF7 /* TripsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092E26ED994E00CFEAF7 /* TripsService.swift */; };
+		3A16093126ED9D8700CFEAF7 /* RatingStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16093026ED9D8700CFEAF7 /* RatingStar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		3A16092126ED7B2500CFEAF7 /* LocationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListVC.swift; sourceTree = "<group>"; };
 		3A16092326ED7D9400CFEAF7 /* TripsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListVC.swift; sourceTree = "<group>"; };
 		3A16092626ED809E00CFEAF7 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		3A16092826ED962400CFEAF7 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		3A16092A26ED96A100CFEAF7 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		3A16092C26ED971A00CFEAF7 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		3A16092E26ED994E00CFEAF7 /* TripsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsService.swift; sourceTree = "<group>"; };
+		3A16093026ED9D8700CFEAF7 /* RatingStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				3A16091B26ED79C200CFEAF7 /* Location.swift */,
+				3A16092826ED962400CFEAF7 /* Trip.swift */,
+				3A16092A26ED96A100CFEAF7 /* Company.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				3A16091E26ED7A2700CFEAF7 /* LocationService.swift */,
+				3A16092E26ED994E00CFEAF7 /* TripsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -107,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				3A16092626ED809E00CFEAF7 /* LocationTableViewCell.swift */,
+				3A16092C26ED971A00CFEAF7 /* TripTableViewCell.swift */,
+				3A16093026ED9D8700CFEAF7 /* RatingStar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,10 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A16092D26ED971A00CFEAF7 /* TripTableViewCell.swift in Sources */,
 				3A16090B26ED75B500CFEAF7 /* MainViewController.swift in Sources */,
 				3A16090726ED75B500CFEAF7 /* AppDelegate.swift in Sources */,
 				3A16092726ED809E00CFEAF7 /* LocationTableViewCell.swift in Sources */,
+				3A16092F26ED994E00CFEAF7 /* TripsService.swift in Sources */,
+				3A16092B26ED96A100CFEAF7 /* Company.swift in Sources */,
+				3A16092926ED962400CFEAF7 /* Trip.swift in Sources */,
 				3A16091F26ED7A2700CFEAF7 /* LocationService.swift in Sources */,
+				3A16093126ED9D8700CFEAF7 /* RatingStar.swift in Sources */,
 				3A16091C26ED79C200CFEAF7 /* Location.swift in Sources */,
 				3A16092426ED7D9400CFEAF7 /* TripsListVC.swift in Sources */,
 				3A16090926ED75B500CFEAF7 /* SceneDelegate.swift in Sources */,
