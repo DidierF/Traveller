@@ -9,8 +9,10 @@ import Foundation
 
 class Location {
     var name = ""
+    var image = ""
 
-    init(name: String) {
+    init(name: String, image: String) {
         self.name = name
+        self.image = image
     }
 }
