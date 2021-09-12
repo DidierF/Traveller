@@ -16,6 +16,7 @@
 		3A16091F26ED7A2700CFEAF7 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16091E26ED7A2700CFEAF7 /* LocationService.swift */; };
 		3A16092226ED7B2500CFEAF7 /* LocationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092126ED7B2500CFEAF7 /* LocationListVC.swift */; };
 		3A16092426ED7D9400CFEAF7 /* TripsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092326ED7D9400CFEAF7 /* TripsListVC.swift */; };
+		3A16092726ED809E00CFEAF7 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16092626ED809E00CFEAF7 /* LocationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3A16091E26ED7A2700CFEAF7 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		3A16092126ED7B2500CFEAF7 /* LocationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListVC.swift; sourceTree = "<group>"; };
 		3A16092326ED7D9400CFEAF7 /* TripsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsListVC.swift; sourceTree = "<group>"; };
+		3A16092626ED809E00CFEAF7 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		3A16090526ED75B500CFEAF7 /* Traveller */ = {
 			isa = PBXGroup;
 			children = (
+				3A16092526ED808A00CFEAF7 /* View */,
 				3A16092026ED7B1200CFEAF7 /* Controller */,
 				3A16091D26ED7A0C00CFEAF7 /* Services */,
 				3A16091A26ED79B300CFEAF7 /* Model */,
@@ -98,6 +101,14 @@
 				3A16092326ED7D9400CFEAF7 /* TripsListVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A16092526ED808A00CFEAF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A16092626ED809E00CFEAF7 /* LocationTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			files = (
 				3A16090B26ED75B500CFEAF7 /* ViewController.swift in Sources */,
 				3A16090726ED75B500CFEAF7 /* AppDelegate.swift in Sources */,
+				3A16092726ED809E00CFEAF7 /* LocationTableViewCell.swift in Sources */,
 				3A16091F26ED7A2700CFEAF7 /* LocationService.swift in Sources */,
 				3A16091C26ED79C200CFEAF7 /* Location.swift in Sources */,
 				3A16092426ED7D9400CFEAF7 /* TripsListVC.swift in Sources */,
